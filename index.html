@@ -22,6 +22,17 @@
         const para = document.createElement('p');
     
         // function is down here!
+
+        
+function chooseName() {
+ const randomNumber = Math.floor(Math.random() * names.length);
+ const choice = names[randomNumber];
+ para.textContent = choice;
+}
+
+chooseName();
+
+
         // function is up here!
     
         section.innerHTML = ' ';
