@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p {
+      color: purple;
+      margin: 0.5em 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+
+<body>
+
+    <section class="preview">
+
+    </section>
+
+  </body>
+  <script>
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const para = document.createElement('p');
+
+    // Add your code here
+
+    function rng(min, max) {
+        const num = Math.floor(Math.random() * (max - min)) + min;
+        return num;
+    }
+
+    function chooseItem(array) {
+        const choice = array [rng(0, array.length)];
+        return choice;
+    }
+
+    para.textContent = chooseItem(names);
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    section.appendChild(para);
+  </script>
+
+</html>
